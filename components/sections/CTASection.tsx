@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button'
 import { MapPin, Phone, Mail, Clock } from 'lucide-react'
 const CTASection = () => {
   return (
-    <section id='contact' className='py-26 px-6 bg-background '>
+    <section id='contact' className='py-26 px-6 bg-[#181717] '>
       <div className='max-w-7xl mx-auto text-center'>
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">

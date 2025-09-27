@@ -7,7 +7,7 @@ export const SITE_URL = 'https://Twospoons.com';
 
 // Navigation Links
 export const NAV_LINKS = [
-  { label: 'Home', href: '#home' },
+  { label: 'Home', href: '/' },
   { label: 'About', href: '#about' },
   { label: 'Menu', href: '#menu' },
   { label: 'Contact', href: '#contact' },
@@ -15,9 +15,9 @@ export const NAV_LINKS = [
 ];
 
 // Hero Section
-export const HERO_HEADING = 'Fresh, Crispy & Made to Order';
-export const HERO_SUBTEXT = 'Satisfy your cravings with Toledo’s favorite fried chicken and seafood — hot, delicious, and ready when you are';
-export const HERO_CTA_TEXT = 'Order Now';
+// export const HERO_HEADING = 'Fresh, Crispy & Made to Order';
+// export const HERO_SUBTEXT = 'Satisfy your cravings with Toledo’s favorite fried chicken and seafood — hot, delicious, and ready when you are';
+// export const HERO_CTA_TEXT = 'Order Now';
 
 
 

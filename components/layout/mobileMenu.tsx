@@ -16,7 +16,7 @@ export function MobileMenu() {
           variant="default"
           size="sm"
           onClick={() => setIsOpen(true)}
-          className="md:hidden rounded-full bg-brand-secondary fixed right-5 top-6"
+          className="md:hidden rounded-full bg-brand-primary fixed right-5 top-10"
         >
           <Menu className="h-10 w-10" />
         </Button>
@@ -25,9 +25,9 @@ export function MobileMenu() {
       {/* Mobile Menu Overlay */}
       {isOpen && (
         <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm md:hidden">
-          <div className="fixed right-0 top-0  w-full max-w-5xl bg-background animate-in slide-in-from-right duration-300 rounded-l-2xl border-l shadow-2xl border-brand-secondary">
+          <div className="fixed right-0 top-0  w-full max-w-5xl bg-background animate-in slide-in-from-bottom duration-300 rounded-l-2xl shadow-2xl border-brand-primary">
             {/* Header */}
-            <div className="flex items-center justify-between px-6 py-4 border-b border-brand-secondary">
+            <div className="flex items-center justify-between px-6 py-4 border-b border-brand-primary">
               {/* Logo */}
               <div className="flex items-center">
                 <Image alt='logo' src='/logo.png' width={120} height={100} />
@@ -38,7 +38,7 @@ export function MobileMenu() {
                 variant="default"
                 size="icon"
                 onClick={() => setIsOpen(false)}
-                className="rounded-full bg-brand-secondary"
+                className="rounded-full bg-brand-primary"
               >
                 <X className="h-6 w-6" />
               </Button>

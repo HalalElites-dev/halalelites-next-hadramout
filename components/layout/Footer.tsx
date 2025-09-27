@@ -89,7 +89,21 @@ const Footer = () => {
 
         {/* Bottom section */}
         <div className="flex flex-col sm:flex-row justify-between items-center pt-8 mt-8 border-t border-accent-foreground">
-          <p className="text-sm  mb-4 sm:mb-0 text-secondary">© 2025 {SITE_TITLE}. All rights reserved.</p>
+            <p className="text-sm mb-4 sm:mb-0 text-secondary">
+            © 2025 {SITE_TITLE}. All rights reserved.
+            <span className="mx-2">|</span>
+            <span>
+              Developed by{' '}
+              <Link
+              href="https://halalelites.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-brand-accent"
+              >
+              Halal-Elites
+              </Link>
+            </span>
+            </p>
         </div>
       </div>
     </footer>
