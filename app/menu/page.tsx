@@ -20,7 +20,7 @@ interface MenuSectionProps {
 
 const MenuSection = ({ title, items }: MenuSectionProps) => (
   <div className="mb-16">
-    <h2 className="text-3xl md:text-5xl font-bold text-center mb-8 text-brand-primary font-body">{title}</h2>
+    <h2 className="text-3xl md:text-6xl font-bold text-center mb-8 text-brand-primary font-body">{title}</h2>
 
     {/* 1 column mobile, 2 columns desktop */}
     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
@@ -35,7 +35,7 @@ const MenuSection = ({ title, items }: MenuSectionProps) => (
           >
             {/* Text */}
             <div className="flex-grow">
-              <h3 className="text-lg font-semibold text-brand-primary">{item.title}</h3>
+              <h3 className="text-2xl md:text-4xl font-semibold text-brand-primary ">{item.title}</h3>
               <p className="text-sm text-white">{item.description}</p>
             </div>
 
