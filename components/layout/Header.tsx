@@ -14,7 +14,7 @@ export function Header() {
         <nav className='grid grid-cols-3 items-center h-auto overflow-hidden'>
             {/* left section: Site title or logo*/}
             <div className='flex items-center space-x-2 justify-start'>
-            <Link href={'#'}>
+            <Link href={'/'}>
                 <div className="flex items-center" style={{ width: 420, height: 120 }}>
                 <Image
                     alt='logo'

@@ -13,6 +13,13 @@ export const NAV_LINKS = [
   { label: 'Contact', href: '#contact' },
 
 ];
+export const FOOTER_LINKS = [
+  { label: 'Home', href: '/' },
+  { label: 'About', href: '/#about' },
+  { label: 'Menu', href: '/#menu' },
+  { label: 'Contact', href: '/#contact' },
+
+];
 
 // Hero Section
 // export const HERO_HEADING = 'Fresh, Crispy & Made to Order';
@@ -102,6 +109,192 @@ export const TESTIMONIALS = [
   }
 ];
 
+// menu list
+export const MENU_CATEGORIES = [
+  {
+    category: "Appetizers",
+    items: [
+      {
+        title: "Hummus",
+        description: "Blended chickpeas with tahini, lemon and garlic served with bread.",
+        price: 5.99,
+        Image: "/hummus.png"
+      },
+      {
+        title: "Baba Ghannoush",
+        description: "Eggplant mixed with tomatoes and onions served with bread.",
+        price: 5.99,
+        Image: "/baba-ghannoush.png"
+      },
+      {
+        title: "House Salad",
+        description: "A mixture of lettuce, tomatoes, carrots, and cucumber with homemade dressing.",
+        price: 6.99,
+        Image: "/house-salad.png"
+      },
+      {
+        title: "Fattoush",
+        description: "A mixture of lettuce and onions topped with fried pita bread and pomegranate dressing.",
+        price: 8.99,
+        Image: "/fattoush.png"
+      },
+      {
+        title: "Mediterranean Plate",
+        description: "Hummus, Baba Ghannoush and House Salad combined on one plate.",
+        price: 8.99,
+        Image: "/mediterranean-plate.png"
+      },
+      {
+        title: "Lamb Broth Soup (Maraq)",
+        description: "Traditional Yemeni-style lamb broth soup.",
+        price: 3.99,
+        Image: "/lamb-broth-soup.png"
+      }
+    ]
+  },
+  {
+    category: "Kids Meals",
+    items: [
+      {
+        title: "Chicken Tenders",
+        description: "Served with fries.",
+        price: 7.99,
+        Image: "/chicken-tenders.png"
+      },
+      {
+        title: "Chicken Nuggets",
+        description: "Served with fries.",
+        price: 7.99,
+        Image: "/chicken-nuggets.png"
+      }
+    ]
+  },
+  {
+    category: "Authentic Entrees",
+    items: [
+      {
+        title: "Haneeth",
+        description: "Prepared with our selection of lamb cooked slowly with special spices.",
+        price: { lamb: 24.99, chicken: 14.99 },
+        Image: "/haneeth.png"
+      },
+      {
+        title: "Mandi",
+        description: "Flavored rice with saffron spices served with slow-cooked meat.",
+        price: { lamb: 24.99, chicken: 14.99 },
+        Image: "/mandi.png"
+      },
+      {
+        title: "Zurbiun",
+        description: "Layers of lightly spiced rice served with special seasoned meat and saffron.",
+        price: { lamb: 24.99, chicken: 14.99 },
+        Image: "/zurbiun.png"
+      },
+      {
+        title: "Grilled Chicken",
+        description: "Marinated half grilled chicken served with rice and vegetables.",
+        price: 15.99,
+        Image: "/grilled-chicken.png"
+      },
+      {
+        title: "Fahsa",
+        description: "Shredded lamb cooked with potatoes, tomatoes and spices. Served sizzling hot.",
+        price: 19.99,
+        Image: "/fahsa.png"
+      },
+      {
+        title: "Grilled Pomfret Fish",
+        description: "Prepared with saffron spices and butterfly fish topped with Arabic red sauce.",
+        price: 19.99,
+        Image: "/pomfret-fish.png"
+      }
+    ]
+  },
+  {
+    category: "Special Entrees",
+    items: [
+      {
+        title: "Family Lamb Special",
+        description: "Family choice of Mandi or Haneeth. Lamb served with rice and soup. Serves 3–4 people.",
+        price: 48,
+        Image: "/family-lamb.png"
+      },
+      {
+        title: "Party Lamb Special",
+        description: "Lamb served with rice and soup. Serves 6–8 people.",
+        price: 98,
+        Image: "/party-lamb.png"
+      },
+      {
+        title: "Family Chicken Special",
+        description: "Choice of Mandi or Haneeth chicken served with rice and soup. Serves 3–4 people.",
+        price: 28,
+        Image: "/family-chicken.png"
+      },
+      {
+        title: "Party Chicken Special",
+        description: "Choice of Mandi or Haneeth chicken served with rice and soup. Serves 6–8 people.",
+        price: 55,
+        Image: "/party-chicken.png"
+      },
+      {
+        title: "Family Fish Special",
+        description: "Grilled Pomfret Fish. Serves 2–3 people.",
+        price: 38,
+        Image: "/family-fish.png"
+      },
+      {
+        title: "Party Fish Special",
+        description: "Grilled Pomfret Fish. Serves 4–6 people.",
+        price: 85,
+        Image: "/party-fish.png"
+      },
+      {
+        title: "Party Mixed Meat Special",
+        description: "Your choice of Lamb + Chicken + Fish. Serves 6–8 people.",
+        price: 40,
+        Image: "/party-mixed-meat.png"
+      }
+    ]
+  },
+  {
+    category: "Drinks",
+    items: [
+      { title: "Vimto", price: 2.99, Image: "/vimto.png" },
+      { title: "Lemonade", price: 3.99, Image: "/lemonade.png" },
+      { title: "Yogurt Drink (Ayran)", price: 3.99, Image: "/ayran.png" },
+      { title: "Canned Soft Drink", price: 1.99, Image: "/soft-drink.png" },
+      { title: "Water", price: 1.00, Image: "/water.png" },
+      { title: "Adeni Chai (Tea)", description: "Cup / 3.49 • 5m Pot / 10.99", price: { cup: 3.49, pot: 10.99 }, Image: "/adeni-tea.png" },
+      { title: "Yemeni Black Tea", description: "Cup / 2.49 • 5m Pot / 8.99", price: { cup: 2.49, pot: 8.99 }, Image: "/yemeni-tea.png" }
+    ]
+  },
+  {
+    category: "Dessert",
+    items: [
+      {
+        title: "Masoub",
+        description: "Chopped bread mixed with bananas, cream, and honey.",
+        price: 10.99,
+        Image: "/masoub.png"
+      },
+      {
+        title: "Areekah",
+        description: "Chopped bread mixed with dates, cream, and honey.",
+        price: 10.99,
+        Image: "/areekah.png"
+      }
+    ]
+  },
+  {
+    category: "Sides",
+    items: [
+      { title: "Rice", price: 3.99, Image: "/rice.png" },
+      { title: "Tannour Bread", price: 1.99, Image: "/tannour-bread.png" },
+      { title: "French Fries", price: 2.99, Image: "/fries.png" }
+    ]
+  }
+];
 
 
 // Footer Info
@@ -128,124 +321,4 @@ export const SOCIAL_LINKS: { name: string; url: string; icon: LucideIcon }[] = [
 
 //MENU PAGE
 
-export const MENU_CATEGORIES = [
-  {
-    category: "Appetizers",
-    items: [
-      {
-        title: "Chicken Samosa",
-        description: "Crispy pastry filled with spiced minced chicken, peas, and potatoes, served with mint chutney.",
-        Image: "/chicken-samosa.png"
-      },
-      {
-        title: "Vegetable Pakora",
-        description: "Assorted fresh vegetables dipped in a spiced chickpea flour batter and deep-fried until golden and crispy.",
-        Image: "/vegetable-pakora.png"
-      },
-      {
-        title: "Paneer Tikka",
-        description: "Cubes of Indian cottage cheese marinated in yogurt and spices, grilled in a tandoor oven until charred and tender.",
-        Image: "/paneer-tikka.png"
-      },
-    ]
-  },
-  {
-    category: "Main Courses",
-    items: [
-      {
-        title: "Chicken Biryani",
-        description: "Fragrant basmati rice layered with tender spiced chicken, saffron, and aromatic herbs, slow-cooked to perfection in traditional style.",
-        Image: "/chicken-biryani.png"
-      },
-      {
-        title: "Grill Kebab Platter",
-        description: "An assortment of succulent grilled kebabs, including chicken tikka, seekh kebab, and lamb chops, served with naan and salad.",
-        Image: "/grill-kebab.png" // Re-using image, but description changed for platter
-      },
-      {
-        title: "Butter Chicken",
-        description: "Tender chicken pieces cooked in a rich, creamy tomato-based sauce, flavored with butter and traditional Indian spices.",
-        Image: "/butter-chicken.png"
-      },
-      {
-        title: "Lamb Rogan Josh",
-        description: "A classic Kashmiri lamb curry, slow-cooked with a blend of aromatic spices, yogurt, and a hint of ginger.",
-        Image: "/lamb-rogan-josh.png"
-      },
-      {
-        title: "Dal Makhani",
-        description: "Slow-cooked black lentils and kidney beans simmered in a creamy, buttery, and mildly spiced tomato gravy.",
-        Image: "/dal-makhani.png"
-      },
-      {
-        title: "Garlic Naan",
-        description: "Soft, leavened flatbread infused with fresh garlic and cilantro, baked in a tandoor oven.",
-        Image: "/garlic-naan.png"
-      },
-    ]
-  },
-  {
-    category: "Desserts",
-    items: [
-      {
-        title: "Gulab Jamun",
-        description: "Deep-fried milk-solids dumplings soaked in a rose-scented sugar syrup, served warm.",
-        Image: "/gulab-jamun.png"
-      },
-      {
-        title: "Kheer (Rice Pudding)",
-        description: "A traditional Indian rice pudding made with slow-cooked basmati rice, milk, sugar, nuts, and cardamom.",
-        Image: "/kheer.png"
-      },
-    ]
-  }
-];
 
-export const  blogPosts = [
-    {
-      title: "Preparing for Ramadan 2024",
-      excerpt:
-        "As we approach the blessed month of Ramadan, our kitchen is bustling with preparations for special iftar and suhoor menus. Learn about our traditional dishes and new additions for this year's celebrations.",
-      date: "February 15, 2024",
-      author: "Chef Ahmad",
-      category: "Recipes",
-      image: "/ramadan.png",
-    },
-    {
-      title: "The Journey of Our Halal Ingredients",
-      excerpt:
-        "Discover how we carefully source our halal ingredients and maintain the highest standards of halal compliance while creating delicious dishes that delight our guests.",
-      date: "February 1, 2024",
-      author: "Sarah Khan",
-      category: "Education",
-      image: "/journey.png",
-    },
-    {
-      title: "Join Our Monthly Cooking Classes",
-      excerpt:
-        "Learn the secrets behind our most popular dishes in our hands-on cooking classes. Next month's theme: Traditional Biryani Masterclass.",
-      date: "January 15, 2024",
-      author: "Chef Ahmad",
-      category: "Education",
-      image: "/cooking-class.png",
-    },
-
-  ]
-
- export const galleryImages = [
-    { src: "/awards.png", alt: "Awards", category: "Restaurant" },
-    { src: "/butter-chicken.png", alt: "Butter Chicken", category: "Restaurant" },
-    { src: "/grill-kebab.png", alt: "Lamb Kebab", category: "Main Dishes" },
-    { src: "/kitchen.png", alt: "Our Kitchen", category: "Restaurant" },
-    { src: "/catering-setup.png", alt: "Dining Area", category: "Restaurant" },
-    { src: "/eid.png", alt: "Eid At TwoSpoons", category: "Desserts" },
-    { src: "/private-party.png", alt: "Party", category: "Appetizers" },
-    { src: "/kitchen.png", alt: "Professional Kitchen", category: "Restaurant" },
-    { src: "/cooking-class.png", alt: "Cooking Class", category: "Main Dishes" },
-    { src: "/special-dining.png", alt: "Private Dining Room", category: "Restaurant" },
-    { src: "/lamb-rogan-josh.png", alt: "Lamb Rogan Josh", category: "Main Dishes" },
-    { src: "/patio-dining.png", alt: "Outdoor Patio", category: "Restaurant" },
-    { src: "/corporate-setup.png", alt: "Corprorate Setup", category: "Restaurant" },
-    { src: "/wedding-setup.png", alt: "Wedding", category: "Restaurant" },
-    { src: "/restaurant-interior.png", alt: "Main Dining Hall", category: "Restaurant" },
-  ]

@@ -25,7 +25,7 @@ export function Hero() {
         <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold text-white text-balance mb-6">
           Experience The Authentic Flavors Of
           <br />
-          <span className="text-brand-primary">Hadramout</span>
+          <span className="text-brand-primary italic">Hadramout</span>
         </h1>
 
         {/* Subtitle */}

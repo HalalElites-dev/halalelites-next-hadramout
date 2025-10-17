@@ -1,6 +1,6 @@
 'use client';
 import Link from "next/link"
-import { FOOTER_TEXT, SITE_TITLE, SOCIAL_LINKS, NAV_LINKS, CONTACT_ADDRESS, CONTACT_HEADING, CONTACT_PHONE, CONTACT_EMAIL } from "@/lib/constants"
+import { FOOTER_TEXT, SITE_TITLE, SOCIAL_LINKS, FOOTER_LINKS, CONTACT_ADDRESS, CONTACT_HEADING, CONTACT_PHONE, CONTACT_EMAIL } from "@/lib/constants"
 import Image from "next/image"
 import { Mail, MapPin, Phone } from "lucide-react"
 import { cn, scrollToSection } from "@/lib/utils"
@@ -45,7 +45,7 @@ const Footer = () => {
           <div>
             <h3 className=" text-2xl text-secondary mb-4 font-heading font-bold">Quick Links</h3>
             <ul className="space-y-3 text-secondary ">
-              {NAV_LINKS.map((link) => (
+              {FOOTER_LINKS.map((link) => (
                 <li key={link.href}>
                   <Link
                     key={link.href}

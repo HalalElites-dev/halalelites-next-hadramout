@@ -51,7 +51,7 @@ const BestSelling = () => {
 
             <div className='flex justify-center'>
                    <Button  className="bg-brand-primary px-10 py-6  text-lg font-medium tracking-wide font-heading">
-                        <Link className='lg:text-xl font-heading font-semibold' href={"/"}>View Full Menu</Link>
+                        <Link className='lg:text-xl font-heading font-semibold' href={"/menu"}>View Full Menu</Link>
                     </Button>
             </div>
         </div>
