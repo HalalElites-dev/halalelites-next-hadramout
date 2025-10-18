@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
 import { MapPin, Phone, Mail, Clock } from 'lucide-react'
+import { CONTACT_EMAIL } from '@/lib/constants'
 const CTASection = () => {
   return (
     <section id='contact' className='py-26 px-6 bg-[#181717] '>
@@ -17,7 +18,7 @@ const CTASection = () => {
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
-                <h3 className="text-xl  text-brand-secondary mb-6 text-left">Hadramout  is conveniently located on XYZ High Street in Toledo, Ohio, offering a central and accessible location for our guests to enjoy their dining experience.
+                <h3 className="text-xl  text-brand-secondary mb-6 text-left">Hadramout  is conveniently located on 3200 N Holland Sylvania Rd in Toledo, Ohio, offering a central and accessible location for our guests to enjoy their dining experience.
                   <br />Have any questions or inquiries? Feel free to reach out to us. We would love to hear from you.</h3>
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
@@ -27,11 +28,11 @@ const CTASection = () => {
                     <div>
                       <h4 className="font-semibold text-brand-secondary mb-1 text-left">Address</h4>
                       <p className="text-brand-secondary/80 text-left">
-                        123 Heritage Street
+                        3200 N Holland Sylvania Rd
                         <br />
                         Downtown District
                         <br />
-                        City, State 12345
+                        Toledo, OH 43615-1408
                       </p>
                     </div>
                   </div>
@@ -42,8 +43,7 @@ const CTASection = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-brand-secondary mb-1 text-left">Phone</h4>
-                      <p className="text-brand-secondary/80">(555) 123-4567</p>
-                      <p className="text-brand-secondary/80">(555) 123-4568</p>
+                      <p className="text-brand-secondary/80">(419) 441-0029</p>
                     </div>
                   </div>
 
@@ -53,8 +53,7 @@ const CTASection = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-brand-secondary mb-1 text-left">Email</h4>
-                      <p className="text-brand-secondary/80 text-left">info@hadramoutrestaurant.com</p>
-                      <p className="text-brand-secondary/80 text-left">reservations@hadramoutrestaurant.com</p>
+                      <p className="text-brand-secondary/80 text-left">{CONTACT_EMAIL}</p>
                     </div>
                   </div>
 
@@ -65,9 +64,9 @@ const CTASection = () => {
                     <div>
                       <h4 className="font-semibold text-brand-secondary mb-1 text-left">Hours</h4>
                       <div className="text-brand-secondary/80 space-y-1 text-left">
-                        <p>Monday - Thursday: 11:00 AM - 10:00 PM</p>
-                        <p>Friday - Saturday: 11:00 AM - 11:00 PM</p>
-                        <p>Sunday: 12:00 PM - 9:00 PM</p>
+                        <p>Monday - Thursday: 11:00 AM - 8:40 PM</p>
+                        <p>Friday - Saturday: 11:00 AM - 9:40 PM</p>
+                        <p>Sunday: 12:00 PM - 8:40 PM</p>
                       </div>
                     </div>
                   </div>
@@ -88,8 +87,7 @@ const CTASection = () => {
 
             {/* Google Maps */}
             <div className="h-full rounded-lg overflow-hidden border border-brand-primary/20">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.4037!2d-74.0059!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ2LjEiTiA3NMKwMDAnMjEuMiJX!5e0!3m2!1sen!2us!4v1234567890"
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.966898989492!2d-83.6823896!3d41.6780583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883c7c1c9f513951%3A0xe40956d0c2c90da8!2s3200%20N%20Holland%20Sylvania%20Rd%2C%20Toledo%2C%20OH%2043615%2C%20USA!5e0!3m2!1sen!2sae!4v1760814830864!5m2!1sen!2sae"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

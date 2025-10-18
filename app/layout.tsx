@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${tajawal.variable} ${openSans.variable} antialiased`}
+        className={`${tajawal.variable} ${openSans.variable} antialiased`} suppressHydrationWarning
       >
         <ThemeProvider
             attribute="class"

@@ -1,6 +1,6 @@
 'use client';
 import Link from "next/link"
-import { FOOTER_TEXT, SITE_TITLE, SOCIAL_LINKS, FOOTER_LINKS, CONTACT_ADDRESS, CONTACT_HEADING, CONTACT_PHONE, CONTACT_EMAIL } from "@/lib/constants"
+import { FOOTER_TEXT, SITE_TITLE, SOCIAL_LINKS, FOOTER_LINKS, CONTACT_HEADING, CONTACT_PHONE, CONTACT_EMAIL } from "@/lib/constants"
 import Image from "next/image"
 import { Mail, MapPin, Phone } from "lucide-react"
 import { cn, scrollToSection } from "@/lib/utils"
@@ -69,19 +69,28 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl mb-8 text-secondary font-heading font-bold">{CONTACT_HEADING}</h3>
             <div className="space-y-6">
-              <div className="flex items-baseline space-x-4 text-secondary">
+              <div className="flex items-center space-x-4 text-secondary">
                 <MapPin className="w-6 h-6 text-secondary" />
                 <div>
-                  <div className="text-secondary ">{CONTACT_ADDRESS}</div>
+                  <Link href="https://maps.app.goo.gl/DKjyMSsbpYbERFuD6" rel="noopener noreferrer" target="_blank" className="text-secondary relative group">
+                    3200 N Holland Sylvania Rd, Toledo, OH
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-accent transition-all group-hover:w-full"></span>
+                  </Link>
                 </div>
               </div>
               <div className="flex items-center space-x-4">
                 <Phone className="w-6 h-6 text-secondary" />
-                <div className="text-secondary ">{CONTACT_PHONE}</div>
+                <Link href={`tel:${CONTACT_PHONE}`} className="text-secondary relative group">
+                  {CONTACT_PHONE}
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-accent transition-all group-hover:w-full"></span>
+                </Link>
               </div>
               <div className="flex items-center space-x-4">
                 <Mail className="w-6 h-6 text-secondary" />
-                <div className="text-secondary ">{CONTACT_EMAIL}</div>
+                <Link href={`mailto:${CONTACT_EMAIL}`} className="text-secondary relative group">
+                  {CONTACT_EMAIL}
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-accent transition-all group-hover:w-full"></span>
+                </Link>
               </div>
             </div>
           </div>

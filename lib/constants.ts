@@ -1,4 +1,4 @@
-import { Facebook, Instagram, LucideIcon, Youtube } from "lucide-react";
+import { Facebook, Instagram, LucideIcon } from "lucide-react";
 
 // Site Metadata
 export const SITE_TITLE = 'Hadramout';
@@ -34,24 +34,28 @@ export const Best_Selling = 'Popular Items';
 
 export const BESTSELLING = [
   {
-    title: "Chicken Mandi",
-    description: "Chicken cooked in a Tandoor with spiced rice.",
-    Image: "/placeholder.svg"
+    title: "Haneeth Chicken",
+    description: "Flavored rice with saffron spices with baked crispy and tender chicken.",
+    Image: "/haneeth-chicken.webp",
+    price: "$17.24"
   },
   {
-    title: "Haneeth",
-    description: "Slow-cooked Lamb with spiced rice.",
-    Image: "/placeholder.svg"
+    title: "Grilled Pompano Fish",
+    description: "Flavored rice with saffron spices and butterfly fish cut topped with Adeni red sauce.",
+    Image: "/grilled-pompano-fish.webp",
+    price: "$22.99"
   },
   {
-    title: "Fahsah",
-    description: "most notably made with shredded lamb and served bubbling hot in a traditional stone pot",
-    Image: "/placeholder.svg"
+    title: "Mandi Lamb",
+    description: "Flavored rice with saffron spices topped with slow-cooked meat.",
+    Image: "/mandi-lamb.webp",
+    price: "$28.74"
   },
    {
-    title: "Mixed Meat Special",
-    description: "Your choice of lamb, meat, or fish. Serves 3-5 People ",
-    Image: "/placeholder.svg"
+    title: "Haneeth Lamb",
+    description: "Flavored rice with saffron spices with baked crispy and tender meat.",
+    Image: "/haneeth-lamb.webp",
+    price: "$28.74"
   },
 ]
 
@@ -84,27 +88,27 @@ export const ABOUT = [
 // Contact Section
 export const CONTACT_HEADING = 'Get in Touch';
 export const CONTACT_SUBTEXT = 'We would love to hear from you! Reach out with any questions or feedback.';
-export const CONTACT_EMAIL = 'support@halalelites.com';
-export const CONTACT_PHONE = '+1 (555) 123-4567';
-export const CONTACT_ADDRESS = '123 HalalElites St, Suite 100, City';
+export const CONTACT_EMAIL = 'support@hadramout.com';
+export const CONTACT_PHONE = '+1 419-441-0029';
+export const CONTACT_ADDRESS = '3200 N Holland Sylvania Rd, Toledo, OH 43615-1408';
 
 
 // Testimonials Section
 
 export const TESTIMONIALS = [
   {
-    quote: "The best Mandi in Toledo.",
-    author: "Sarah M.",
+    quote: "Amazing food & service.",
+    author: "Brett C.",
     role: "Regular Customer"
   },
   {
-    quote: "Finally, a restaurant that serves genuine Haneeth It is a must-try! Outstanding quality.",
-    author: "Ahmed K.",
+    quote: "DELICIOUS - some of the best food I have had in Toledo. Had the Zurbian Chicken and Haneeth Lamb. The meat fell off the bones and melted in the mouth! And don't skip the chai if you are a fan of tea.",
+    author: "Hayley H.",
     role: "Food Blogger"
   },
   {
-    quote: "Great place for family dinners. The staff is friendly and the menu has something for everyone. Highly recommended!",
-    author: "Jamal R.",
+    quote: "I live nearby and this place smells fantastic everyday. great food, tender meat, friendly staff, highly recommend.",
+    author: "Joseph M.",
     role: "Local Resident"
   }
 ];
@@ -303,19 +307,15 @@ export const FOOTER_TEXT = '© 2025 Hadramout, serving the best Yemeni food  In 
 export const SOCIAL_LINKS: { name: string; url: string; icon: LucideIcon }[] = [
   {
     name: 'Facebook',
-    url: 'https://twitter.com/yourprofile',
+    url: 'https://www.facebook.com/p/Hadramout-Restaurant-at-Toledo-61559666712093/',
     icon: Facebook,
   },
   {
     name: 'Instagram',
-    url: 'https://github.com/yourprofile',
+    url: 'https://www.instagram.com/hadramouttoledo/?hl=en',
     icon: Instagram,
   },
-  {
-    name: 'Youtube',
-    url: 'https://linkedin.com/in/yourprofile',
-    icon: Youtube,
-  },
+  
 ];
 
 

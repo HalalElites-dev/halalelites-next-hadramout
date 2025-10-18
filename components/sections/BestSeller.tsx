@@ -22,7 +22,7 @@ const BestSelling = () => {
                                         src={bestseller.Image} 
                                         alt={bestseller.title} 
                                         fill 
-                                        className="object-cover invert" 
+                                        className="object-cover rounded-md" 
                                     />
                                 </div>
                             </div>
@@ -38,9 +38,8 @@ const BestSelling = () => {
                                 
                                 {/* Price section */}
                                 <div className='flex items-baseline gap-2'>
-                                    <span className='text-sm text-muted-foreground'>Start from</span>
                                     <span className='text-3xl font-bold text-brand-primary font-body'>
-                                        $49.99
+                                        {bestseller.price}
                                     </span>
                                 </div>
                             </div>

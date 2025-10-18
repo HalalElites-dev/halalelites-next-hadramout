@@ -20,7 +20,7 @@ const Testimonials = () => {
 
                 <div className='grid md:grid-cols-3 gap-10'>
                     {TESTIMONIALS.map((testimonial, index) => (
-                        <Card key={index} className='bg-secondary p-10 shadow-xl border-0 hover:shadow-2xl transition-shadow duration-300 flex flex-col justify-between h-full'>
+                        <Card key={index} className='bg-secondary p-10 shadow-xl border-0 hover:shadow-2xl transition-shadow duration-300 flex flex-col justify-between'>
                             <div className='flex mb-6'>
                                 {[1, 2, 3, 4, 5].map((star) => (
                                     <Star key={star} className='w-6 h-6 fill-brand-primary text-brand-primary' />
@@ -31,7 +31,7 @@ const Testimonials = () => {
                             </p>
                             <div>
                                 <div className='font-bold text-foreground text-xl mb-1'>{testimonial.author}</div>
-                                <div className='text-muted-foreground text-sm'>{testimonial.role}</div>
+                                {/* <div className='text-muted-foreground text-sm'>{testimonial.role}</div> */}
                             </div>
                         </Card>
                     ))}
