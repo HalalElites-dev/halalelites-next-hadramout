@@ -8,7 +8,7 @@ const CTASection = () => {
       <div className='max-w-7xl mx-auto text-center'>
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl uppercase text-foreground mb-8 leading-tight tracking-tight">
+            <h2 className="text-5xl md:text-6xl uppercase text-foreground mb-8 leading-tight tracking-tight font-semibold">
               Visit <span className="text-brand-primary">Us</span>
             </h2>
 

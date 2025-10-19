@@ -24,7 +24,7 @@ const About = () => {
             </div>
             
             <div>
-              <h2 className='text-5xl  text-brand-secondary mb-8 leading-tight upper'>
+              <h2 className='text-5xl  text-brand-secondary mb-8 leading-tight upper font-semibold'>
                 Serving Traditional <span className='text-brand-primary'>Yemini Cuisine to Toledo</span> 
               </h2>
               

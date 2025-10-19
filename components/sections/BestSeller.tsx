@@ -9,7 +9,7 @@ const BestSelling = () => {
     <section id="menu" className='py-30 px-6 bg-[#181717]'>
         <div className='max-w-7xl mx-auto'>
             <div className='text-center mb-20'>
-                <h1 className='text-5xl md:text-6xl  text-foreground mb-4 leading-tight tracking-tight font-heading uppercase'>Popular <span className="text-brand-primary font-heading ">Choices</span></h1>
+                <h1 className='text-5xl md:text-6xl  text-foreground mb-4 leading-tight tracking-tight font-heading uppercase font-semibold'>Popular <span className="text-brand-primary font-heading ">Choices</span></h1>
                 
                 {/* Best selling items - exact design match */}
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-16 pt-10'>
