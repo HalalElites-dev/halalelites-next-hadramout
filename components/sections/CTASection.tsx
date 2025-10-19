@@ -1,7 +1,7 @@
 import React from 'react'
-import { Button } from '@/components/ui/button'
 import { MapPin, Phone, Mail, Clock } from 'lucide-react'
 import { CONTACT_EMAIL } from '@/lib/constants'
+import { OrderDialog } from '../ui/orderdialog'
 const CTASection = () => {
   return (
     <section id='contact' className='py-26 px-6 bg-[#181717] '>
@@ -75,12 +75,12 @@ const CTASection = () => {
 
               {/* Quick Actions */}
               <div className="space-y-4">
-                <Button
-                  size="lg"
-                  className="w-full bg-brand-primary  text-brand-accent font-bold"
-                >
-                  Order Now
-                </Button>
+                <OrderDialog 
+                               doorDashUrl="https://www.doordash.com/en/store/hadramout-restaurant-toledo-29921082/?srsltid=AfmBOoqeItcuGNjdkUoJW1tY00nTATc1Zq5Eh565CAayuWUsHNDPXlQ5"
+                               uberEatsUrl="https://www.ubereats.com/store/hadramout-restaurants/CvqtjKNqUay4t8YSau_1iQ?ps=1"
+                                 triggerClassName="px-8 py-4 rounded-lg w-full font-bold text-md"
+
+                             />
 
               </div>
             </div>

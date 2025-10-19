@@ -37,25 +37,25 @@ export const BESTSELLING = [
     title: "Haneeth Chicken",
     description: "Flavored rice with saffron spices with baked crispy and tender chicken.",
     Image: "/haneeth-chicken.webp",
-    price: "$17.24"
+    price: "$14.99"
   },
   {
     title: "Grilled Pompano Fish",
     description: "Flavored rice with saffron spices and butterfly fish cut topped with Adeni red sauce.",
     Image: "/grilled-pompano-fish.webp",
-    price: "$22.99"
+    price: "$19.99"
   },
   {
     title: "Mandi Lamb",
     description: "Flavored rice with saffron spices topped with slow-cooked meat.",
     Image: "/mandi-lamb.webp",
-    price: "$28.74"
+    price: "$24.99"
   },
    {
     title: "Haneeth Lamb",
     description: "Flavored rice with saffron spices with baked crispy and tender meat.",
     Image: "/haneeth-lamb.webp",
-    price: "$28.74"
+    price: "$24.99"
   },
 ]
 

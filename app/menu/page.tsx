@@ -69,14 +69,12 @@ const Page = () => {
 
   return (
     <div id="menu" className="min-h-screen bg-[#181717]">
-      {/* Hero Section */}
-       
-
+     
       {/* Menu Content */}
       <div  className="max-w-6xl mx-auto px-4 py-16">
          <div className="  py-20 mb-12 justify-center flex items-center w-full"> 
           <div className="max-w-6xl mx-auto px-4">
-            <h1 className="md:text-8xl font-bold  text-brand-primary">Menu</h1>
+            <h1 className="text-7xl md:text-8xl font-bold  text-brand-primary italic">Menu</h1>
           </div>
         </div>
         {MENU_CATEGORIES.map((section) => (

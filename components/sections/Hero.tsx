@@ -6,7 +6,7 @@ export function Hero() {
       {/* Full-screen background image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/hero.png"
+          src="/hadramout-hero.png"
           alt="Traditional Yemeni Mandi"
           fill
           className="object-cover"
