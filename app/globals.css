@@ -249,6 +249,10 @@
   transform: rotate(-45deg);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Custom animations for header entrance */
 @keyframes slideDownFade {
   0% {

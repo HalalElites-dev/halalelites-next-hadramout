@@ -8,9 +8,9 @@ export const SITE_URL = 'https://Twospoons.com';
 // Navigation Links
 export const NAV_LINKS = [
   { label: 'Home', href: '/' },
-  { label: 'About', href: '#about' },
-  { label: 'Menu', href: '#menu' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'About', href: '/#about' },
+  { label: 'Menu', href: '/#menu' },
+  { label: 'Contact', href: '/#contact' },
 
 ];
 export const FOOTER_LINKS = [
