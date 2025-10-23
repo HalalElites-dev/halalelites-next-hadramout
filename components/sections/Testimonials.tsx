@@ -17,7 +17,7 @@ const Testimonials = () => {
           </div>
 
           {/* Right - Testimonial Card (will overlap image slightly) */}
-        <Card className="w-[330px] self-center md:w-[420px] lg:w-[580px] p-5 md:p-6 bg-secondary shadow-xl translate-y-30 lg:translate-y-16">
+          <Card className="w-auto max-w-[90%] md:max-w-[420px] lg:max-w-[580px] self-center p-5 md:p-6 bg-secondary shadow-xl translate-y-30 lg:translate-y-16">
             <svg
               className="w-12 h-12 mb-3 opacity-80 hidden md:block text-brand-primary "
               fill="currentColor"
@@ -35,7 +35,7 @@ const Testimonials = () => {
             </p>
 
             <div className="flex items-center gap-3">
-              
+
               <div>
                 <p className="font-bold text-base text-foreground">{TESTIMONIALS[2].author} </p>
                 <p className="text-sm text-muted-foreground">Happy Customer</p>
@@ -45,16 +45,16 @@ const Testimonials = () => {
         </div>
 
         {/* Main Image - Below the content */}
-        <div className="relative w-full h-[400px]  md:h-auto lg:h-[640px] rounded-lg overflow-hidden">
-            <Image
-                src="/testimonial.jpg"
-                alt="Hadramout Restaurant logo on the wall"
-                fill
-                className="object-cover"
-                priority
-            />
-            {/* Dark overlay */}
-            <div className="absolute inset-0 bg-black/30 pointer-events-none" />
+        <div className="relative w-full h-[425px]   lg:h-[640px] rounded-lg overflow-hidden">
+          <Image
+            src="/testimonial.jpg"
+            alt="Hadramout Restaurant logo on the wall"
+            fill
+            className="object-cover"
+            priority
+          />
+          {/* Dark overlay */}
+          <div className="absolute inset-0 bg-black/30 pointer-events-none" />
         </div>
 
         {/* <div className='grid md:grid-cols-3 gap-10'>
