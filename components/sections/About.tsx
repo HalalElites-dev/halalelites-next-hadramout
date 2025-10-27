@@ -10,7 +10,7 @@ const About = () => {
             <div className="w-full h-[300px] lg:h-[600px]  rounded-lg flex items-center justify-center">
               <Image
               src={'/outside.webp'}
-              alt='hadramout restaurant'
+              alt='hadramout restaurant outside view'
               fill
               className=''
               />
@@ -33,7 +33,7 @@ const About = () => {
                   Established in 2024, our restaurant is dedicated to sharing the vibrant flavors and hospitality of Yemen’s Hadramout region. We invite you to experience authentic Yemeni cuisine in a welcoming and modern setting.
                 </p>
                 <p>
-                 From our signature Mandi and Zurbian to traditional Fahsah and fresh Yemeni bread, we use only the finest ingredients and time-honored cooking methods to ensure an authentic dining experience.
+                 From our signature Mandi and Zurbian to traditional Fahsah and spiced Yemeni tea, we use only the finest ingredients and time-honored cooking methods to ensure an authentic dining experience.
                 </p>
               </div>
             </div>

@@ -30,8 +30,7 @@ const CTASection = () => {
                       <p className="text-brand-secondary/80 text-left">
                         3200 N Holland Sylvania Rd
                         <br />
-                        Downtown District
-                        <br />
+                   
                         Toledo, OH 43615-1408
                       </p>
                     </div>
@@ -43,7 +42,8 @@ const CTASection = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-brand-secondary mb-1 text-left">Phone</h4>
-                      <p className="text-brand-secondary/80">(419) 441-0029</p>
+                      <a href="tel:(419) 441-0029" className="text-brand-secondary/80">(419) 441-0029</a><br />
+                      <a href="tel:(419) 973-5151" className="text-brand-secondary/80">(419) 973-5151</a>
                     </div>
                   </div>
 
@@ -53,7 +53,7 @@ const CTASection = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-brand-secondary mb-1 text-left">Email</h4>
-                      <p className="text-brand-secondary/80 text-left">{CONTACT_EMAIL}</p>
+                      <a href={`mailto:${CONTACT_EMAIL}`} className="text-brand-secondary/80 text-left">{CONTACT_EMAIL}</a>
                     </div>
                   </div>
 

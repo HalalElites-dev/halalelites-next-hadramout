@@ -76,7 +76,7 @@ export function Header() {
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center gap-8">
+            <nav className="hidden lg:flex items-center gap-8">
               {NAV_LINKS.map((link) => (
                 <Link
                   key={link.href}
@@ -93,7 +93,7 @@ export function Header() {
             </nav>
 
             {/* Desktop CTA */}
-            <div className="hidden md:flex items-center gap-4">
+            <div className="hidden lg:flex items-center gap-4">
               <div className="flex items-center space-x-2 text-brand-secondary">
                 <Phone className="h-4 w-4 text-brand-primary" />
                 <Link href="tel:+14194410029" className="text-sm hover:underline">+1 (419) 441-0029</Link>
@@ -108,7 +108,7 @@ export function Header() {
             {/* Mobile Menu Button */}
             <button
               onClick={toggleMenu}
-              className="md:hidden relative w-10 h-10 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-ring rounded-md"
+              className="md:flex lg:hidden relative w-10 h-10 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-ring rounded-md"
               aria-label="Toggle menu"
             >
               <div className="relative w-6 h-5">
@@ -132,7 +132,7 @@ export function Header() {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-0 z-40 bg-background/95 backdrop-blur-lg md:hidden transition-all duration-300 ${isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        className={`fixed inset-0 z-40 bg-background/95 backdrop-blur-lg md:flex lg:hidden transition-all duration-300 ${isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
           }`}
       >
         <div

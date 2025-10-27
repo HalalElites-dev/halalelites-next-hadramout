@@ -1,8 +1,28 @@
+'use client';
 import { Card } from "../ui/card"
 import Image from "next/image"
 import { TESTIMONIALS } from "@/lib/constants"
+import { useState, useEffect } from "react"
 
 const Testimonials = () => {
+  const [currentIndex, setCurrentIndex] = useState(2)
+  const [isTransitioning, setIsTransitioning] = useState(false)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsTransitioning(true)
+      
+      setTimeout(() => {
+        setCurrentIndex((prev) => (prev + 1) % TESTIMONIALS.length)
+        setIsTransitioning(false)
+      }, 300)
+    }, 4000) // Change testimonial every 4 seconds
+
+    return () => clearInterval(interval)
+  }, [])
+
+  const currentTestimonial = TESTIMONIALS[currentIndex]
+
   return (
     <section id="testimonials" className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
@@ -17,7 +37,7 @@ const Testimonials = () => {
           </div>
 
           {/* Right - Testimonial Card (will overlap image slightly) */}
-          <Card className="w-auto max-w-[90%] md:max-w-[420px] lg:max-w-[580px] self-center p-5 md:p-6 bg-secondary shadow-xl translate-y-30 lg:translate-y-16">
+          <Card className="w-[90%] md:w-[420px] lg:w-[580px] min-h-[260px] md:min-h-[280px] self-center p-5 md:p-6 bg-secondary shadow-xl translate-y-30 lg:translate-y-16 flex flex-col">
             <svg
               className="w-12 h-12 mb-3 opacity-80 hidden md:block text-brand-primary "
               fill="currentColor"
@@ -30,15 +50,19 @@ const Testimonials = () => {
               </g>
             </svg>
 
-            <p className="text-sm md:text-base text-foreground leading-relaxed mb-5">
-              <q>{TESTIMONIALS[2].quote}</q>
-            </p>
+            <div 
+              className="transition-opacity duration-300 flex-1 flex flex-col"
+              style={{ opacity: isTransitioning ? 0 : 1 }}
+            >
+              <p className="text-sm md:text-base text-foreground leading-relaxed mb-5 flex-1">
+                <q>{currentTestimonial.quote}</q>
+              </p>
 
-            <div className="flex items-center gap-3">
-
-              <div>
-                <p className="font-bold text-base text-foreground">{TESTIMONIALS[2].author} </p>
-                <p className="text-sm text-muted-foreground">Happy Customer</p>
+              <div className="flex items-center gap-3 mt-auto">
+                <div>
+                  <p className="font-bold text-base text-foreground">{currentTestimonial.author} </p>
+                  <p className="text-sm text-muted-foreground">Happy Customer</p>
+                </div>
               </div>
             </div>
           </Card>
@@ -57,23 +81,7 @@ const Testimonials = () => {
           <div className="absolute inset-0 bg-black/30 pointer-events-none" />
         </div>
 
-        {/* <div className='grid md:grid-cols-3 gap-10'>
-                    {TESTIMONIALS.map((testimonial, index) => (
-                        <Card key={index} className='bg-secondary p-10 shadow-xl border-0 hover:shadow-2xl transition-shadow duration-300 flex flex-col justify-between'>
-                            <div className='flex mb-6'>
-                                {[1, 2, 3, 4, 5].map((star) => (
-                                    <Star key={star} className='w-6 h-6 fill-brand-primary text-brand-primary' />
-                                ))}
-                            </div>
-                            <p className='text-foreground mb-8 text-lg leading-relaxed italic'>
-                                &quot;{testimonial.quote}&quot;
-                            </p>
-                            <div>
-                                <div className='font-bold text-foreground text-xl mb-1'>{testimonial.author}</div>
-                            </div>
-                        </Card>
-                    ))}
-                </div> */}
+     
       </div>
     </section>
   )
