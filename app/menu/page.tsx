@@ -6,6 +6,7 @@ import { MENU_CATEGORIES } from '@/lib/constants';
 interface MenuItem {
   title: string
   description?: string
+  categoryDescription?: string
   price: string | number | { [key: string]: string | number } // allow numbers and objects
   image?: string
   Image?: string
@@ -21,7 +22,7 @@ interface MenuSectionProps {
 const MenuSection = ({ title, items }: MenuSectionProps) => (
   <div className="mb-16">
     <h2 className="text-3xl md:text-5xl font-bold text-center mb-8 text-brand-primary font-body">{title}</h2>
-
+    <h3 className='text-center text-brand-primary text-lg md:text-xl'>{MENU_CATEGORIES.find(category => category.category === title)?.categoryDescription}</h3>
     {/* 1 column mobile, 2 columns desktop */}
     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
       {items.map((item, index) => {
@@ -72,11 +73,15 @@ const Page = () => {
 
       {/* Menu Content */}
       <div className="max-w-6xl mx-auto px-4 py-16">
-        <div className="  py-20 mb-12 justify-center flex items-center w-full">
+        <div className="  py-20 mb-12 justify-center flex items-center w-full flex-col">
           <div className="max-w-6xl mx-auto px-4">
             <h1 className='text-5xl md:text-6xl  text-foreground mb-4 leading-tight tracking-tight font-heading uppercase font-semibold'>Our <span className="text-brand-primary font-heading ">Menu</span></h1>
+            
           </div>
+          <h3 className="text-lg md:text-2xl font-semibold text-center mb-4 text-brand-primary">For Dining options, you get unlimited rice</h3>
         </div>
+        
+
         {MENU_CATEGORIES.map((section) => (
           <MenuSection
             key={section.category}

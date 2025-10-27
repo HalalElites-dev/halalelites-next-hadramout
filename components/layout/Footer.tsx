@@ -85,8 +85,10 @@ const Footer = () => {
                   <br />
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-accent transition-all group-hover:w-full"></span>
                 </Link>
-                   <Link href={`tel:${CONTACT_PHONE}`} className="text-secondary relative group">
-                  <a href="tel:(419) 973-5151" className="">+1 419-973-5151</a>
+
+                <Link href="tel:+14199735151" className="text-secondary relative group">
+                  +1 419-973-5151
+                  <br />
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-accent transition-all group-hover:w-full"></span>
                 </Link>
               </div>

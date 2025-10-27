@@ -7,12 +7,14 @@ const About = () => {
         <div className='grid lg:grid-cols-2 gap-16 items-start '>
            {/* Left side - Image placeholder */}
           <div className='relative'>
-            <div className="w-full h-[300px] lg:h-[600px]  rounded-lg flex items-center justify-center">
+            <div className="w-full h-56 sm:h-64 md:h-80 lg:h-[600px] rounded-lg overflow-hidden">
               <Image
-              src={'/outside.webp'}
-              alt='hadramout restaurant outside view'
-              fill
-              className=''
+                src="/outside.webp"
+                alt="Hadramout restaurant outside view"
+                fill
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                className="object-cover"
+                priority
               />
             </div>
           </div>
