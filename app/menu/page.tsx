@@ -22,7 +22,7 @@ interface MenuSectionProps {
 const MenuSection = ({ title, items }: MenuSectionProps) => (
   <div className="mb-16">
     <h2 className="text-3xl md:text-5xl font-bold text-center mb-8 text-brand-primary font-body">{title}</h2>
-    <h3 className='text-center text-brand-primary text-lg md:text-xl'>{MENU_CATEGORIES.find(category => category.category === title)?.categoryDescription}</h3>
+    <h3 className='text-center text-white font-bold text-lg md:text-xl'>{MENU_CATEGORIES.find(category => category.category === title)?.categoryDescription}</h3>
     {/* 1 column mobile, 2 columns desktop */}
     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
       {items.map((item, index) => {
