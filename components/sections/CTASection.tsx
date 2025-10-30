@@ -64,9 +64,8 @@ const CTASection = () => {
                     <div>
                       <h4 className="font-semibold text-brand-secondary mb-1 text-left">Hours</h4>
                       <div className="text-brand-secondary/80 space-y-1 text-left">
-                        <p>Monday - Thursday: 11:00 AM - 8:40 PM</p>
-                        <p>Friday - Saturday: 11:00 AM - 9:40 PM</p>
-                        <p>Sunday: 12:00 PM - 8:40 PM</p>
+                        <p>Sunday - Thursday: 12:00 AM - 9:00 PM</p>
+                        <p>Friday - Saturday: 12:30 AM - 10:30 PM</p>
                       </div>
                     </div>
                   </div>

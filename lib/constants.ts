@@ -271,8 +271,8 @@ export const MENU_CATEGORIES = [
       { title: "Yogurt Drink (Ayran)", price: 3.99, Image: "/ayran.png" },
       { title: "Canned Soft Drink", price: 1.99, Image: "/soft-drink.png" },
       { title: "Water", price: 1.00, Image: "/water.png" },
-      { title: "Adeni Chai (Tea)", description: "Cup / 3.49 • 5m Pot / 10.99", price: { cup: 3.50, pot: 5.99 }, Image: "/adeni-tea.png" },
-      { title: "Yemeni Black Tea", description: "Cup / 2.49 • 5m Pot / 8.99", price: { cup: 2.50, pot: 4.99 }, Image: "/yemeni-tea.png" }
+      { title: "Adeni Chai (Tea)", description: "", price: { cup: 3.50, pot: 5.99 }, Image: "/adeni-tea.png" },
+      { title: "Yemeni Black Tea", description: "", price: { cup: 2.50, pot: 4.99 }, Image: "/yemeni-tea.png" }
     ]
   },
   {
@@ -292,8 +292,7 @@ export const MENU_CATEGORIES = [
       },
       {
         title: "Cheesecake",
-        description: "Creamy cheesecake with a graham cracker crust.",
-        price: 10.99,
+        description: "With toppings, choice of Pistachio, Chocolate, Lotus, and Dark Chocolate.",
         Image: "/cheesecake.png"
       }
     ]
