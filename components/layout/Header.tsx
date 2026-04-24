@@ -59,7 +59,7 @@ export function Header() {
           }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-auto py-4">
+          <div className="relative flex items-center justify-between h-auto py-4">
             {/* Logo */}
             <div className="flex-shrink-0">
               <Link href="/" className="flex items-center">
@@ -76,7 +76,7 @@ export function Header() {
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-8">
+            <nav className="hidden lg:flex items-center gap-8 absolute left-1/2 transform -translate-x-1/2">
               {NAV_LINKS.map((link) => (
                 <Link
                   key={link.href}
@@ -98,8 +98,8 @@ export function Header() {
                 <Phone className="h-4 w-4 text-brand-primary" />
                 <Link href="tel:+14194410029" className="text-sm hover:underline">+1 (419) 441-0029</Link>
               </div>
-            
-              <OrderDialog 
+
+              <OrderDialog
                 doorDashUrl="https://www.doordash.com/en/store/hadramout-restaurant-toledo-29921082/?srsltid=AfmBOoqeItcuGNjdkUoJW1tY00nTATc1Zq5Eh565CAayuWUsHNDPXlQ5"
                 uberEatsUrl="https://www.ubereats.com/store/hadramout-restaurants/CvqtjKNqUay4t8YSau_1iQ?ps=1"
               />
@@ -155,7 +155,7 @@ export function Header() {
                 <Phone className="h-5 w-5 text-brand-primary" />
                 <Link href="tel:+14194410029" className="text-lg">+1 (419) 441-0029</Link>
               </div>
-               <OrderDialog
+              <OrderDialog
                 doorDashUrl="https://www.doordash.com/en/store/hadramout-restaurant-toledo-29921082/?srsltid=AfmBOoqeItcuGNjdkUoJW1tY00nTATc1Zq5Eh565CAayuWUsHNDPXlQ5"
                 uberEatsUrl="https://www.ubereats.com/store/hadramout-restaurants/CvqtjKNqUay4t8YSau_1iQ?ps=1"
               />
