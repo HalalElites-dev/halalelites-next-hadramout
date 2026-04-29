@@ -1,6 +1,16 @@
-
 import React from 'react';
 import { MENU_CATEGORIES } from '@/lib/constants';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Our Menu | Authentic Yemeni & Middle Eastern Food',
+  description: 'Explore our authentic Yemeni and Middle Eastern menu. We offer a variety of dishes including Mandi, Haneeth, Fahsah, Zurbian, and other Halal options in Toledo.',
+  openGraph: {
+    title: 'Hadramout Restaurant Menu',
+    description: 'Explore our authentic Yemeni and Middle Eastern menu. Featuring Mandi, Haneeth, Fahsah, and Zurbian.',
+    url: '/menu',
+  },
+};
 
 // Define proper types for menu items
 interface MenuItem {

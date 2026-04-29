@@ -11,7 +11,7 @@ export default function Home() {
       <About />
       <BestSelling />
       <Testimonials />
-      <CTASection/>
+      <CTASection />
     </main>
   );
 }
